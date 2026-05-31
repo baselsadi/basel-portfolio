@@ -11,6 +11,7 @@ import {
   BrainCircuit,
   Database,
   Download,
+  FileText,
   GraduationCap,
 } from "lucide-react";
 
@@ -22,7 +23,7 @@ const profile = {
   email: "sadibasel@gmail.com",
   github: "https://github.com/baselsadi",
   linkedin: "https://www.linkedin.com/in/baselsadi",
-  cv: "#",
+  cv: "/baselcv.pdf",
 };
 
 const skills = [
@@ -194,7 +195,7 @@ export default function Portfolio() {
                 href={profile.cv}
                 className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-sm transition hover:-translate-y-1 hover:border-indigo-200 hover:text-indigo-700"
               >
-                <Download size={18} /> Download CV
+                <FileText size={18} /> View CV
               </a>
             </div>
           </motion.div>
